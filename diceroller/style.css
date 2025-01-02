@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    height: 100vh;
+}
+
+.container h1, p, input, button{
+    margin: 5px;
+}
+
+.container input, button{
+    min-width: 200px;
+    min-height: 30px;
+    background-color: white;
+    border: 2px solid;
+}
+
+.square{
+    display: grid;
+    /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
+    /* 3 rows that are 33.3px */
+    grid-template-rows: 33.3px 33.3px 33.3px;
+    gap: 5px; /* Gap between each of the item */
+
+    margin-top: 10px;
+    padding: 15px;
+    width: 115px;
+    height: 115px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.circle{
+    width: 33.3px;
+    height: 33.3px;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: black;
+}
+
+#dieContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 70vw;
+}
